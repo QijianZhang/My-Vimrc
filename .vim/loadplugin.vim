@@ -18,13 +18,15 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'pboettch/vim-cmake-syntax'
 Plug 'tomasr/molokai'
+Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " File type plugins
 Plug 'aklt/plantuml-syntax'
 Plug 'cespare/vim-toml'
 Plug 'elzr/vim-json'
 Plug 'pangloss/vim-javascript'
-Plug 'plasticboy/vim-markdown'
+Plug 'vim-pandoc/vim-pandoc'
+"Plug 'plasticboy/vim-markdown'
 Plug 'racer-rust/vim-racer'
 Plug 'rhysd/vim-crystal'
 Plug 'rust-lang/rust.vim'
@@ -33,6 +35,8 @@ Plug 'timonv/vim-cargo'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/rfc-syntax'
 Plug 'tkztmk/vim-vala'
+Plug 'jhradilek/vim-docbk'
+Plug 'valloric/matchtagalways'
 
 " others
 Plug 'bling/vim-airline'
@@ -44,11 +48,12 @@ Plug 'sjb/devhelp.vim'
 Plug 'somini/vim-autoclose'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'valloric/youcompleteme'
+"Plug 'valloric/youcompleteme'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-syntastic/syntastic'
 Plug 'ryanoasis/vim-devicons'
 "Plug 'yianwillis/vimcdoc'
+Plug 'alx741/vinfo'
 
 call plug#end()
 
@@ -89,17 +94,22 @@ let g:syntastic_cpp_compiler_options='-fconcepts'
 "-------------------------------------------------------------------------------
 " Markdown
 "-------------------------------------------------------------------------------
-let g:vim_markdown_folding_disabled = 1
-let g:vim_markdown_math = 1
-let g:vim_markdown_frontmatter = 1
-let g:vim_markdown_toml_frontmatter = 1
-let g:vim_markdown_json_frontmatter = 1
+"let g:vim_markdown_folding_disabled = 1
+"let g:vim_markdown_math = 1
+"let g:vim_markdown_frontmatter = 1
+"let g:vim_markdown_toml_frontmatter = 1
+"let g:vim_markdown_json_frontmatter = 1
 
 "-------------------------------------------------------------------------------
 " airline
 "-------------------------------------------------------------------------------
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#capslock#enabled = 1
+let g:airline#extensions#ycm#enabled = 1
+let g:airline#extensions#ycm#error_symbol = 'E:'
+let g:airline#extensions#ycm#warning_symbol = 'W:'
+"let g:airline#extensions#cursormode#enabled = 1
 let g:airline_theme='onedark'
 
 set statusline +=%{fugitive#statusline()}
@@ -149,3 +159,15 @@ let g:startify_fortune_use_unicode = 1
 "-------------------------------------------------------------------------------
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:DevIconsEnableFoldersOpenClose = 1
+
+"-------------------------------------------------------------------------------
+" Matchtagalways
+"-------------------------------------------------------------------------------
+let g:mta_filetypes = {
+	\ 'html' : 1,
+	\ 'xhtml' : 1,
+	\ 'xml' : 1,
+	\ 'rng' : 1,
+	\ 'xsl' : 1,
+	\ 'jinja' : 1,
+	\}

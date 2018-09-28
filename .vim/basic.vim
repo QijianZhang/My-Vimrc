@@ -21,6 +21,8 @@ set history=5000
 set belloff=all
 let g:tex_conceal="ad"
 set backspace=start,indent
+runtime ftplugin/man.vim
+set foldmethod=marker
 
 " Vim looking
 syntax on
