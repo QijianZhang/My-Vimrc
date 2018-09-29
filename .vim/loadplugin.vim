@@ -87,7 +87,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = {
 	\ "mode": "active",
 	\ "active_filetypes": [],
-	\ "passive_filetypes": ["tex"] }
+	\ "passive_filetypes": ["tex", "asm"] }
 
 let g:syntastic_cpp_compiler_options='-fconcepts'
 
