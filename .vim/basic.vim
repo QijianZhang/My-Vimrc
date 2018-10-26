@@ -5,6 +5,7 @@
 "===============================================================================
 
 " Vim behavior
+set belloff=all
 filetype indent plugin on
 set encoding=utf-8
 set linebreak
@@ -18,7 +19,6 @@ set smartindent
 set autowrite
 set autoread
 set history=5000
-set belloff=all
 let g:tex_conceal="ad"
 set backspace=start,indent
 runtime ftplugin/man.vim
@@ -66,8 +66,8 @@ if has("gui_running")
 	set linespace=-4
 
 	" Set gui Window size and position
-	winpos 113 65
-	set lines=42 columns=176
+	winpos 110 70
+	set lines=40 columns=171
 endif
 
 " Key map

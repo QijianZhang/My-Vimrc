@@ -37,6 +37,7 @@ Plug 'vim-scripts/rfc-syntax'
 Plug 'tkztmk/vim-vala'
 Plug 'jhradilek/vim-docbk'
 Plug 'valloric/matchtagalways'
+"Plug 'hukeyue/vim-clangd'
 
 " others
 Plug 'bling/vim-airline'
