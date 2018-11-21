@@ -24,6 +24,9 @@ set backspace=start,indent
 runtime ftplugin/man.vim
 set foldmethod=marker
 
+set path+=/usr/*/include
+set path+=/usr/include/*
+
 " Vim looking
 syntax on
 set cursorline
@@ -38,6 +41,7 @@ set showcmd
 set cmdheight=1
 set showtabline=2
 set laststatus=2
+set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -58,8 +62,9 @@ if has("gui_running")
 	
 	" Set gui font
 	if has("gui_gtk3")
-		set guifont=SauceCodePro\ Nerd\ Font\ 12
-		set guifontwide=思源黑体\ 12
+		"set guifont=SauceCodePro\ Nerd\ Font\ 12
+		set guifont=iosevka\ term\ medium\ 12.5
+		set guifontwide=Source\ Han\ Sans\ 12
 		set guiheadroom=0
 	endif
 
@@ -67,7 +72,7 @@ if has("gui_running")
 
 	" Set gui Window size and position
 	winpos 110 70
-	set lines=40 columns=171
+	set lines=42 columns=171
 endif
 
 " Key map

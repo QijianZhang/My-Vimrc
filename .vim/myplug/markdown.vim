@@ -8,4 +8,4 @@ inoremap <buffer> <Leader>ic ``<Esc>i
 inoremap <buffer> <Leader>cb ```<CR>```<Esc>ka
 inoremap <buffer> <Leader>im $$<Esc>i
 inoremap <buffer> <Leader>bm $$<CR>$$<Esc>ko
-inoremap <buffer> <Leader>m ---<CR>title: <CR>author: qijian.zhang<CR>date: <C-R>=strftime("%Y-%m-%d")<CR><CR>keywords: []<CR>tags: []<CR>abstract: \|<CR>---<Esc>kkkkkk$a
+inoremap <buffer> <Leader>m ---<CR>title: <CR>author: qijian.zhang<CR>date: <C-R>=strftime("%Y-%m-%d")<CR><CR>tags: []<CR>abstract: \|<CR>---<Esc>kkkkk$a

@@ -4,6 +4,8 @@
 " Date: 2018-09-09
 "===============================================================================
 
+set comments=s:/**,mb:*,ex:**/,:///,://
+
 inoremap <buffer> <Leader>d #define 
 inoremap <buffer> {<CR> {}<Esc>i<CR><Esc>O
 inoremap <buffer> <Leader>m int main(int argc, char *argv[])<CR>{}<Esc>i<CR><Esc>O

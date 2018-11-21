@@ -10,6 +10,7 @@ call plug#begin('~/.vim/plugged')
 
 " syntax color schemas
 Plug 'altercation/vim-colors-solarized'
+Plug 'bluz71/vim-moonfly-colors'
 Plug 'flazz/vim-colorschemes'
 Plug 'joshdick/onedark.vim'
 Plug 'justinmk/vim-syntax-extra'
@@ -53,8 +54,9 @@ Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-syntastic/syntastic'
 Plug 'ryanoasis/vim-devicons'
-"Plug 'yianwillis/vimcdoc'
+Plug 'yianwillis/vimcdoc'
 Plug 'alx741/vinfo'
+Plug 'godlygeek/tabular'
 
 call plug#end()
 
