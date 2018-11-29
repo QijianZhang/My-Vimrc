@@ -4,7 +4,7 @@
 " Date: 2018-09-09
 "===============================================================================
 
-set comments=s:/**,mb:*,ex:**/,:///,://
+set comments=:///,://
 
 inoremap <buffer> <Leader>d #define 
 inoremap <buffer> {<CR> {}<Esc>i<CR><Esc>O

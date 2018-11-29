@@ -5,6 +5,7 @@
 "===============================================================================
 
 set ft=c
+set cinoptions=:0
 
 source ~/.vim/myplug/c-family.vim
 inoremap <buffer> <Leader>i #include <.h><Esc>hhi

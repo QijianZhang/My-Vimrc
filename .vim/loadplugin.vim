@@ -39,6 +39,7 @@ Plug 'tkztmk/vim-vala'
 Plug 'jhradilek/vim-docbk'
 Plug 'valloric/matchtagalways'
 "Plug 'hukeyue/vim-clangd'
+"Plug 'SirVer/ultisnips'
 
 " others
 Plug 'bling/vim-airline'
@@ -46,7 +47,7 @@ Plug 'mattn/emmet-vim'
 Plug 'mattn/webapi-vim'
 Plug 'mhinz/vim-startify'
 Plug 'scrooloose/nerdtree'
-Plug 'sjb/devhelp.vim'
+"Plug 'sjb/devhelp.vim'
 Plug 'somini/vim-autoclose'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -93,6 +94,8 @@ let g:syntastic_mode_map = {
 	\ "passive_filetypes": ["tex", "asm"] }
 
 let g:syntastic_cpp_compiler_options='-fconcepts'
+
+let g:syntastic_c_include_dirs = ["../../include", "../../../include"]
 
 "-------------------------------------------------------------------------------
 " Markdown
@@ -174,3 +177,15 @@ let g:mta_filetypes = {
 	\ 'xsl' : 1,
 	\ 'jinja' : 1,
 	\}
+
+"-------------------------------------------------------------------------------
+" Ultisnips
+"-------------------------------------------------------------------------------
+let g:UltiSnipsUsePythonVersion=3
+let g:UltiSnipsEditSplit="horizontal"
+let g:UltiSnipsSnippetsDir="~/.vim/mysnippets"
+let g:UltiSnipsSnippetDirectories=["~/.vim/mysnippets"]
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsListSnippets="<c-tab>"
+let g:UltiSnipsJumpForwardTrigger="<m-j>"
+let g:UltiSnipsJumpBackwardTrigger="<m-k>"

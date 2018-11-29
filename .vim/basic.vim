@@ -41,10 +41,10 @@ set showcmd
 set cmdheight=1
 set showtabline=2
 set laststatus=2
-set expandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+"set expandtab
+set tabstop=8
+set shiftwidth=8
+set softtabstop=8
 set list
 set listchars=tab:\\ ,trail:-
 set winheight=5
@@ -62,8 +62,8 @@ if has("gui_running")
 	
 	" Set gui font
 	if has("gui_gtk3")
-		"set guifont=SauceCodePro\ Nerd\ Font\ 12
-		set guifont=iosevka\ term\ medium\ 12.5
+		set guifont=SauceCodePro\ Nerd\ Font\ \medium\ 12
+		"set guifont=iosevka\ term\ medium\ 12.5
 		set guifontwide=Source\ Han\ Sans\ 12
 		set guiheadroom=0
 	endif
