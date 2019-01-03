@@ -63,14 +63,17 @@ if has("gui_running")
 	" Set gui font
 	if has("gui_gtk3")
 		set guifont=SauceCodePro\ Nerd\ Font\ \medium\ 12
-		"set guifont=iosevka\ term\ medium\ 12.5
+		"set guifont=Courier\ 13
+		"set guifont=Hack\ nerd\ font\ 12
+		"set guifont=Latin\ Modern\ Mono\ 13
+		"set guifont=Anonymice\ Nerd\ Font\ 13
 		set guifontwide=Source\ Han\ Sans\ 12
 		set guiheadroom=0
 	endif
 
 	set linespace=-4
 
-	" Set gui Window size and position
+	"Set gui Window size and position
 	winpos 110 70
 	set lines=42 columns=171
 endif
@@ -86,4 +89,4 @@ nnoremap <M-p> <Esc>:tabp<CR>
 nnoremap <M-c> <Esc>:tabc<CR>
 nnoremap <M-f> <Esc>:tabf<CR>
 nnoremap <M-l> <Esc>:tabl<CR>
-inoremap ;; <Esc>$a;
+inoremap <Leader>; <Esc>$a;

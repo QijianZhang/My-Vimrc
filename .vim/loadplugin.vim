@@ -40,6 +40,8 @@ Plug 'jhradilek/vim-docbk'
 Plug 'valloric/matchtagalways'
 "Plug 'hukeyue/vim-clangd'
 "Plug 'SirVer/ultisnips'
+Plug 'majutsushi/tagbar'
+Plug 'tbastos/vim-lua'
 
 " others
 Plug 'bling/vim-airline'
@@ -58,6 +60,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'yianwillis/vimcdoc'
 Plug 'alx741/vinfo'
 Plug 'godlygeek/tabular'
+Plug 'lilydjwg/fcitx.vim'
 
 call plug#end()
 
