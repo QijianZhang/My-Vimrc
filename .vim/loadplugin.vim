@@ -27,6 +27,7 @@ Plug 'cespare/vim-toml'
 Plug 'elzr/vim-json'
 Plug 'pangloss/vim-javascript'
 Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
 "Plug 'plasticboy/vim-markdown'
 Plug 'racer-rust/vim-racer'
 "Plug 'rhysd/vim-crystal'
@@ -192,3 +193,15 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-tab>"
 let g:UltiSnipsJumpForwardTrigger="<m-j>"
 let g:UltiSnipsJumpBackwardTrigger="<m-k>"
+
+"-------------------------------------------------------------------------------
+" Rust
+"-------------------------------------------------------------------------------
+let g:rust_fold = 2
+let g:rustfmt_autosave = 1
+let g:rustfmt_autosave_if_config_present = 1
+
+"-------------------------------------------------------------------------------
+" Pandoc
+"-------------------------------------------------------------------------------
+let g:pandoc#spell#enabled = 0
