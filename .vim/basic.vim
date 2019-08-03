@@ -31,7 +31,7 @@ set path+=/usr/include/*
 syntax on
 set cursorline
 set number
-set relativenumber
+"set relativenumber
 set background=dark
 colors onedark
 set ruler
@@ -62,6 +62,7 @@ if has("gui_running")
 	
 	" Set gui font
 	if has("gui_gtk3")
+		"set guifont=cousine\ nerd\ font\ 12
 		set guifont=SauceCodePro\ Nerd\ Font\ 12
 		"set guifont=Courier\ 13
 		"set guifont=Hack\ nerd\ font\ 12
@@ -71,7 +72,9 @@ if has("gui_running")
 		set guiheadroom=0
 	endif
 
-	set linespace=-4
+	" On Ubuntu, set system language to en
+	" if set to zh-cn, line height will be rendered higher
+	"set linespace=-4
 
 	"Set gui Window size and position
 	winpos 110 70

@@ -57,11 +57,12 @@ Plug 'tpope/vim-surround'
 "Plug 'valloric/youcompleteme'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-syntastic/syntastic'
-Plug 'ryanoasis/vim-devicons'
 Plug 'yianwillis/vimcdoc'
 Plug 'alx741/vinfo'
 Plug 'godlygeek/tabular'
 Plug 'lilydjwg/fcitx.vim'
+
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
