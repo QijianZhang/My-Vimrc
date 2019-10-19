@@ -62,14 +62,8 @@ if has("gui_running")
 	
 	" Set gui font
 	if has("gui_gtk3")
-		"set guifont=cousine\ nerd\ font\ 12
 		set guifont=SauceCodePro\ Nerd\ Font\ 12
-		"set guifont=Courier\ 13
-		"set guifont=Hack\ nerd\ font\ 12
-		"set guifont=Latin\ Modern\ Mono\ 13
-		"set guifont=Anonymice\ Nerd\ Font\ 13
 		set guifontwide=Source\ Han\ Sans\ 12
-		set guiheadroom=0
 	endif
 
 	" On Ubuntu, set system language to en

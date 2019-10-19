@@ -22,25 +22,16 @@ Plug 'tomasr/molokai'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " File type plugins
-"Plug 'aklt/plantuml-syntax'
 Plug 'cespare/vim-toml'
 Plug 'elzr/vim-json'
 Plug 'pangloss/vim-javascript'
 Plug 'vim-pandoc/vim-pandoc'
-Plug 'vim-pandoc/vim-pandoc-syntax'
-"Plug 'plasticboy/vim-markdown'
 Plug 'racer-rust/vim-racer'
-"Plug 'rhysd/vim-crystal'
 Plug 'rust-lang/rust.vim'
 Plug 'tikhomirov/vim-glsl'
 Plug 'timonv/vim-cargo'
-"Plug 'vim-ruby/vim-ruby'
-"Plug 'vim-scripts/rfc-syntax'
-"Plug 'tkztmk/vim-vala'
 Plug 'jhradilek/vim-docbk'
 Plug 'valloric/matchtagalways'
-"Plug 'hukeyue/vim-clangd'
-"Plug 'SirVer/ultisnips'
 Plug 'majutsushi/tagbar'
 Plug 'tbastos/vim-lua'
 
@@ -50,17 +41,15 @@ Plug 'mattn/emmet-vim'
 Plug 'mattn/webapi-vim'
 Plug 'mhinz/vim-startify'
 Plug 'scrooloose/nerdtree'
-"Plug 'sjb/devhelp.vim'
 Plug 'somini/vim-autoclose'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-"Plug 'valloric/youcompleteme'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-syntastic/syntastic'
 Plug 'yianwillis/vimcdoc'
 Plug 'alx741/vinfo'
 Plug 'godlygeek/tabular'
-Plug 'lilydjwg/fcitx.vim'
+"Plug 'lilydjwg/fcitx.vim'
 
 Plug 'ryanoasis/vim-devicons'
 
@@ -69,18 +58,6 @@ call plug#end()
 "===============================================================================
 " Configure plugins
 "===============================================================================
-
-"-------------------------------------------------------------------------------
-" youcompleteme
-"-------------------------------------------------------------------------------
-let g:ycm_min_num_of_chars_for_completion = 3
-let g:ycm_auto_trigger = 1
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_complete_in_comments = 1
-let g:ycm_add_preview_to_completeopt = 1
-let g:ycm_autoclose_preview_window_after_completion = 0
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_key_list_stop_completion = ['<CR>']
 
 "-------------------------------------------------------------------------------
 " syntastic
@@ -101,15 +78,6 @@ let g:syntastic_mode_map = {
 let g:syntastic_cpp_compiler_options='-fconcepts'
 
 let g:syntastic_c_include_dirs = ["../../include", "../../../include"]
-
-"-------------------------------------------------------------------------------
-" Markdown
-"-------------------------------------------------------------------------------
-"let g:vim_markdown_folding_disabled = 1
-"let g:vim_markdown_math = 1
-"let g:vim_markdown_frontmatter = 1
-"let g:vim_markdown_toml_frontmatter = 1
-"let g:vim_markdown_json_frontmatter = 1
 
 "-------------------------------------------------------------------------------
 " airline
