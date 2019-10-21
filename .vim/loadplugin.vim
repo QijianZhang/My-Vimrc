@@ -34,6 +34,7 @@ Plug 'jhradilek/vim-docbk'
 Plug 'valloric/matchtagalways'
 Plug 'majutsushi/tagbar'
 Plug 'tbastos/vim-lua'
+Plug 'vimwiki/vimwiki'
 
 " others
 Plug 'bling/vim-airline'
@@ -152,18 +153,6 @@ let g:mta_filetypes = {
 	\}
 
 "-------------------------------------------------------------------------------
-" Ultisnips
-"-------------------------------------------------------------------------------
-let g:UltiSnipsUsePythonVersion=3
-let g:UltiSnipsEditSplit="horizontal"
-let g:UltiSnipsSnippetsDir="~/.vim/mysnippets"
-let g:UltiSnipsSnippetDirectories=["~/.vim/mysnippets"]
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsListSnippets="<c-tab>"
-let g:UltiSnipsJumpForwardTrigger="<m-j>"
-let g:UltiSnipsJumpBackwardTrigger="<m-k>"
-
-"-------------------------------------------------------------------------------
 " Rust
 "-------------------------------------------------------------------------------
 let g:rust_fold = 2
@@ -174,3 +163,13 @@ let g:rustfmt_autosave_if_config_present = 1
 " Pandoc
 "-------------------------------------------------------------------------------
 let g:pandoc#spell#enabled = 0
+let g:pandoc#modules#disabled = ["folding"]
+
+"-------------------------------------------------------------------------------
+" vimwiki
+"-------------------------------------------------------------------------------
+let g:vimwiki_list = [{'path': '~/bench/vimwiki/',
+		     \ 'path-html': '~/bench/vimwiki/html',
+		     \ 'auto_export': 1,
+		     \ 'auto_toc': 1
+		     \}]
