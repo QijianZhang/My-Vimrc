@@ -62,7 +62,8 @@ if has("gui_running")
 	
 	" Set gui font
 	if has("gui_gtk3")
-		set guifont=SauceCodePro\ Nerd\ Font\ 12
+		set guifont=DejaVuSansMono\ Nerd\ Font\ 12
+		"set guifont=SauceCodePro\ Nerd\ Font\ 12
 		set guifontwide=Source\ Han\ Sans\ 12
 	endif
 
@@ -72,7 +73,7 @@ if has("gui_running")
 
 	"Set gui Window size and position
 	winpos 110 70
-	set lines=42 columns=171
+	set lines=47 columns=171
 endif
 
 " Key map
