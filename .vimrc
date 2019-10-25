@@ -34,5 +34,8 @@ if !exists("autocommands_loaded")
 
 	" LaTeX
 	au BufRead,BufNewFile *.tex source ~/.vim/myplug/latex.vim
+
+	" Haskell
+	au BufRead,BufNewFile *.hs source ~/.vim/myplug/haskell.vim
 endif
 
