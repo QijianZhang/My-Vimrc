@@ -31,7 +31,6 @@ set path+=/usr/include/*
 syntax on
 set cursorline
 set number
-"set relativenumber
 set background=dark
 colors onedark
 set ruler
@@ -41,10 +40,6 @@ set showcmd
 set cmdheight=1
 set showtabline=2
 set laststatus=2
-"set expandtab
-set tabstop=8
-set shiftwidth=8
-set softtabstop=8
 set list
 set listchars=tab:\\ ,trail:-
 set winheight=5

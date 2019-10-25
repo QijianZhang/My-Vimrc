@@ -5,6 +5,10 @@
 "===============================================================================
 
 set ft=cpp
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 
 source ~/.vim/myplug/c-family.vim
 inoremap <buffer> <Leader>i #include <><Esc>i
