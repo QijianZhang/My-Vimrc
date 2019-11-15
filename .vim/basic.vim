@@ -30,6 +30,7 @@ set path+=/usr/include/*
 " Vim looking
 syntax on
 set cursorline
+set cursorcolumn
 set number
 set background=dark
 colors onedark
@@ -67,8 +68,8 @@ if has("gui_running")
 	"set linespace=-4
 
 	"Set gui Window size and position
-	winpos 110 70
-	set lines=47 columns=171
+	set lines=45
+	set columns=180
 endif
 
 " Key map

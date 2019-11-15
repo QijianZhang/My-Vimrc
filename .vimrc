@@ -23,6 +23,9 @@ if !exists("autocommands_loaded")
 	" C
 	au BufRead,BufNewFile *.c,*.h, source ~/.vim/myplug/c.vim
 
+	" c.ohce
+	au BufRead,BufNewFile *.c.ohce,*.h.ohce, source ~/.vim/myplug/ohce/c.vim
+
 	" CPP
 	au BufRead,BufNewFile *.cpp,*.cc,*.cxx,*.hxx,*.hpp,*.hh source ~/.vim/myplug/cpp.vim
 

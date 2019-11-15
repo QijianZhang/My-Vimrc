@@ -9,16 +9,14 @@
 call plug#begin('~/.vim/plugged')
 
 " syntax color schemas
-Plug 'altercation/vim-colors-solarized'
-Plug 'bluz71/vim-moonfly-colors'
-Plug 'flazz/vim-colorschemes'
+"Plug 'flazz/vim-colorschemes'
 Plug 'joshdick/onedark.vim'
 Plug 'justinmk/vim-syntax-extra'
 Plug 'luochen1990/rainbow'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'pboettch/vim-cmake-syntax'
-Plug 'tomasr/molokai'
+"Plug 'tomasr/molokai'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " File type plugins
@@ -47,7 +45,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-syntastic/syntastic'
-Plug 'yianwillis/vimcdoc'
+"Plug 'yianwillis/vimcdoc'
 Plug 'alx741/vinfo'
 Plug 'godlygeek/tabular'
 "Plug 'lilydjwg/fcitx.vim'
@@ -70,6 +68,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_error_symbol = "\uF071"
+let g:syntastic_warning_symbol = "\uF06A"
 
 let g:syntastic_mode_map = {
 	\ "mode": "active",
@@ -78,7 +78,11 @@ let g:syntastic_mode_map = {
 
 let g:syntastic_cpp_compiler_options='-fconcepts'
 
-let g:syntastic_c_include_dirs = ["../../include", "../../../include"]
+let g:syntastic_c_include_dirs = ["../../include",
+				\ "../../../include",
+				\ "/usr/include/freetype2"]
+
+let g:syntastic_ignore_files = ['\m^/usr/include/', '\m\c\.ohce$']
 
 "-------------------------------------------------------------------------------
 " airline
