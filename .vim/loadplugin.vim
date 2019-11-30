@@ -48,7 +48,7 @@ Plug 'vim-syntastic/syntastic'
 "Plug 'yianwillis/vimcdoc'
 Plug 'alx741/vinfo'
 Plug 'godlygeek/tabular'
-"Plug 'lilydjwg/fcitx.vim'
+Plug 'lilydjwg/fcitx.vim'
 
 Plug 'ryanoasis/vim-devicons'
 

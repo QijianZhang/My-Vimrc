@@ -30,7 +30,6 @@ set path+=/usr/include/*
 " Vim looking
 syntax on
 set cursorline
-set cursorcolumn
 set number
 set background=dark
 colors onedark
@@ -45,6 +44,9 @@ set list
 set listchars=tab:\\ ,trail:-
 set winheight=5
 set winminheight=3
+let c_gnu = 1
+let c_no_utf = 0
+let c_no_if0 = 0
 
 " GUI Vim settings
 if has("gui_running")
@@ -70,6 +72,7 @@ if has("gui_running")
 	"Set gui Window size and position
 	set lines=45
 	set columns=180
+	winpos 58 92
 endif
 
 " Key map

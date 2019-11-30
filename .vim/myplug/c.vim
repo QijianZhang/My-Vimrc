@@ -5,7 +5,7 @@
 "===============================================================================
 
 set ft=c
-set cinoptions=:0
+set cinoptions=:0,(0,+0
 set tabstop=8
 set shiftwidth=8
 set softtabstop=8
