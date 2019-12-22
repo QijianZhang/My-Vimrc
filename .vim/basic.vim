@@ -73,6 +73,9 @@ if has("gui_running")
 	set lines=45
 	set columns=180
 	winpos 58 92
+
+	" I don't want to wait a while for Escape
+	inoremap <Esc> <Esc><Esc>
 endif
 
 " Key map
