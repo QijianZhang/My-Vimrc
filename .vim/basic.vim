@@ -23,6 +23,10 @@ let g:tex_conceal="ad"
 set backspace=start,indent
 runtime ftplugin/man.vim
 set foldmethod=marker
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
 
 set path+=/usr/*/include
 set path+=/usr/include/*
