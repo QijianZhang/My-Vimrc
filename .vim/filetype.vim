@@ -8,5 +8,5 @@ if exists("did_load_filetypes")
 endif
 
 augroup filetypedetect
-  au! BufRead,BufNewFile *.sad setfiletype sad
+  au! BufRead,BufNewFile *.sad,.cgen setfiletype sad
 augroup END
