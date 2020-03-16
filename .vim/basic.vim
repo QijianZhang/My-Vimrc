@@ -66,7 +66,7 @@ if has("gui_running")
 	if has("gui_gtk3")
 		set guifont=DejaVuSansMono\ Nerd\ Font\ 12
 		"set guifont=SauceCodePro\ Nerd\ Font\ 12
-		set guifontwide=Source\ Han\ Sans\ 12
+		set guifontwide=Noto\ Sans\ CJK\ SC\ 12
 	endif
 
 	" On Ubuntu, set system language to en
@@ -74,9 +74,9 @@ if has("gui_running")
 	"set linespace=-4
 
 	"Set gui Window size and position
-	set lines=45
-	set columns=180
-	winpos 58 92
+	set lines=29
+	set columns=134
+	winpos 11 83
 
 	" I don't want to wait a while for Escape
 	inoremap <Esc> <Esc><Esc>
