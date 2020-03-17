@@ -56,6 +56,8 @@ let c_no_if0 = 0
 if has("gui_running")
 	" Use context menu
 	set mousemodel=popup
+    set mouseshape=i-r:beam,s:updown,sd:updown,vs:leftright,vd:leftright,m:no,ml:up-arrow,v:rightup-arrow
+
 	" Hide scroll bar, menus, toolbar etc.
 	set guioptions=aeiEGMt
 
