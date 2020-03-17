@@ -64,8 +64,8 @@ if has("gui_running")
 	
 	" Set gui font
 	if has("gui_gtk3")
-		set guifont=DejaVuSansMono\ Nerd\ Font\ 12
-		"set guifont=SauceCodePro\ Nerd\ Font\ 12
+		set guifont=SauceCodePro\ Nerd\ Font\ 12
+		"set guifont=DejaVuSansMono\ Nerd\ Font\ 12
 		set guifontwide=Noto\ Sans\ CJK\ SC\ 12
 	endif
 
@@ -74,9 +74,12 @@ if has("gui_running")
 	"set linespace=-4
 
 	"Set gui Window size and position
-	set lines=29
-	set columns=134
-	winpos 11 83
+	set lines=27
+	set columns=135
+	winpos 5 53
+	"set lines=29
+	"set columns=134
+	"winpos 11 83
 
 	" I don't want to wait a while for Escape
 	inoremap <Esc> <Esc><Esc>
@@ -84,8 +87,11 @@ endif
 
 " Key map
 let mapleader=","
+nnoremap <C-l> <Esc>:bn<CR>
+nnoremap <C-h> <Esc>:bp<CR>
+nnoremap <C-q> <Esc>:bd<Space>
+
 nnoremap <Space> <C-w>
-nnoremap <C-Tab> <Esc>:bn<CR>
 nnoremap <Space>w <Esc>:w<CR>
 nnoremap <M-n> <Esc>:tabn<CR>
 nnoremap <M-N> <Esc>:tabnew
@@ -94,3 +100,4 @@ nnoremap <M-c> <Esc>:tabc<CR>
 nnoremap <M-f> <Esc>:tabf<CR>
 nnoremap <M-l> <Esc>:tabl<CR>
 inoremap <Leader>; <Esc>$a;
+inoremap <Leader>, <Esc>f)a,
