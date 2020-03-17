@@ -85,7 +85,7 @@ endif
 " Key map
 let mapleader=","
 nnoremap <Space> <C-w>
-nnoremap <Space><Space> <Esc>:bn<CR>
+nnoremap <C-Tab> <Esc>:bn<CR>
 nnoremap <Space>w <Esc>:w<CR>
 nnoremap <M-n> <Esc>:tabn<CR>
 nnoremap <M-N> <Esc>:tabnew
