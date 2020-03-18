@@ -76,9 +76,9 @@ if has("gui_running")
 	"set linespace=-4
 
 	"Set gui Window size and position
-	set lines=27
 	set columns=135
-	winpos 5 53
+	autocmd GUIEnter * set lines=31
+	winpos 5 33
 	"set lines=29
 	"set columns=134
 	"winpos 11 83
