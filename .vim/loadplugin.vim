@@ -45,7 +45,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-syntastic/syntastic'
-Plug 'yianwillis/vimcdoc'
+"Plug 'yianwillis/vimcdoc'
 Plug 'alx741/vinfo'
 Plug 'godlygeek/tabular'
 Plug 'lilydjwg/fcitx.vim'
@@ -97,7 +97,7 @@ let g:airline#extensions#ycm#warning_symbol = 'W:'
 let g:airline_theme='onedark'
 
 set statusline +=%{fugitive#statusline()}
-j
+
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#whitespace#symbol = '!'
 let g:airline_powerline_fonts = 1
@@ -105,18 +105,6 @@ if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 
-"let g:airline_left_sep = ''
-"let g:airline_left_alt_sep = ''
-"let g:airline_right_sep = ''
-"let g:airline_right_alt_sep = ''
-"let g:airline_left_sep = ''
-"let g:airline_left_alt_sep = ''
-"let g:airline_right_sep = ''
-"let g:airline_right_alt_sep = ''
-"let g:airline_left_sep = ''
-"let g:airline_left_alt_sep = ''
-"let g:airline_right_sep = ''
-"let g:airline_right_alt_sep = ''
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
@@ -172,8 +160,5 @@ let g:pandoc#modules#disabled = ["folding"]
 "-------------------------------------------------------------------------------
 " vimwiki
 "-------------------------------------------------------------------------------
-let g:vimwiki_list = [{'path': '~/bench/vimwiki/',
-		     \ 'path_html': '~/bench/vimwiki/html',
-		     \ 'auto_export': 1,
-		     \ 'auto_toc': 1
-		     \}]
+let g:vimwiki_list = [{ 'path': '~/bench/vimwiki/', 'path_html': '~/bench/vimwiki/html' },
+                    \ { 'path': '~/bench/blog', 'path_html': '~/bench/blog' }]

@@ -67,7 +67,6 @@ if has("gui_running")
 	" Set gui font
 	if has("gui_gtk3")
 		set guifont=SauceCodePro\ Nerd\ Font\ 12
-		"set guifont=DejaVuSansMono\ Nerd\ Font\ 12
 		set guifontwide=Noto\ Sans\ CJK\ SC\ 12
 	endif
 
@@ -79,9 +78,6 @@ if has("gui_running")
 	set columns=135
 	autocmd GUIEnter * set lines=31
 	winpos 5 33
-	"set lines=29
-	"set columns=134
-	"winpos 11 83
 
 	" I don't want to wait a while for Escape
 	inoremap <Esc> <Esc><Esc>
