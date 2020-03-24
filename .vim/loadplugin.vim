@@ -160,5 +160,4 @@ let g:pandoc#modules#disabled = ["folding"]
 "-------------------------------------------------------------------------------
 " vimwiki
 "-------------------------------------------------------------------------------
-let g:vimwiki_list = [{ 'path': '~/bench/vimwiki/', 'path_html': '~/bench/vimwiki/html' },
-                    \ { 'path': '~/bench/blog', 'path_html': '~/bench/blog' }]
+let g:vimwiki_list = [{ 'path': '~/bench/vimwiki/', 'path_html': '~/bench/vimwiki/html' }]
